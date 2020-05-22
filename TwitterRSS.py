@@ -3,8 +3,8 @@ import tweepy
 from bs4 import BeautifulSoup
 
 # Authenticate to Twitter
-auth = tweepy.OAuthHandler("yHCc1LLldhFpcgvud540l4hxO", "CI0ptQy9ojtLDcNyJASEmffJRNow1yq1pE1EfPYvDIffTMSciN")
-auth.set_access_token("711010595022217217-dhprBd3iJRxgGLj0LCrmBEMxuo20hKV", "niHzcU6OtXStxehLgIMhydvnVGnuffKZ6H9NrmLjU1EAS")
+auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
+auth.set_access_token("key", "secret_key")
 
 # Create API object
 api = tweepy.API(auth, wait_on_rate_limit=True,
