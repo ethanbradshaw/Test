@@ -1,3 +1,4 @@
+#Imports
 from urllib.request import urlopen
 import tweepy
 from bs4 import BeautifulSoup
@@ -27,8 +28,5 @@ def update(xml_update_url):
 
 
 UPDATE_URL = "https://blog.counter-strike.net/index.php/category/updates/feed/"
-api.update_status(update(UPDATE_URL))
-#Updates the RSS link
-
 
 #Grabs newest update and tweets
