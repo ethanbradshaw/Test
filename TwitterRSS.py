@@ -27,8 +27,6 @@ def update(xml_update_url):
 
 
 UPDATE_URL = "https://blog.counter-strike.net/index.php/category/updates/feed/"
-api.update_status(update(UPDATE_URL))
-#Updates the RSS link
-
+update(UPDATE_URL)
 
 #Grabs newest update and tweets
